@@ -12,3 +12,77 @@ void main() {
      printf("%d is the largest.",c);
     
 }
+ Modification:
+1.find smallest
+
+#include <stdio.h>
+void main() {
+    int a,b,c;
+    printf("Enter any three numbers:");
+    scanf("%d%d%d",&a,&b,&c);
+    
+    if(a<=b&&a<=c)
+    printf("%d is the smallest.",a);
+    else if(b<=c)
+    printf("%d is the smallest.",b);
+    else
+     printf("%d is the smallest.",c);
+    
+}
+2.find largest in four numbers
+
+#include <stdio.h>
+int main() {
+    int a,b,c,d;
+    printf("Enter any four numbers:");
+    scanf("%d%d%d%d",&a,&b,&c,&d);
+    
+    if(a>=b&&a>=c&&a>=d)
+    printf("%d is the largest.",a);
+    else if(b<=c&&b>=d)
+    printf("%d is the largest.",b);
+    else if(c>=d)
+     printf("%d is the largest.",c);
+     else
+     printf("%d is the largest.",d);
+    return 0;
+    
+    
+}   
+3. numbers are equal or not 
+
+#include <stdio.h>
+int main() {
+    int a,b,c;
+    printf("Enter any three numbers:");
+    scanf("%d%d%d%",&a,&b,&c);
+    
+    if(a==b&&a==c)
+    printf("all number is equal.");
+    else 
+    printf("all number is not equal.");
+    return 0;
+    
+    
+}   
+4.second largest :
+
+#include <stdio.h>
+int a,b,c;
+int large() {
+     if ((a >= b && a >= c)||(a <= b && a <= c))
+     return 0;
+     else
+     return 1;
+}
+int main() {
+  printf("Enter Three Numbers:");
+  scanf("%d%d%d",&a,&b,&c);
+  if (large(a))
+      printf("%d is the second largest number.",a);
+   else if (large(b))
+      printf("%d is the second largest number.",b);
+   else
+     printf("%d is the largest number.",c);
+    return 0;
+}
