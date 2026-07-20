@@ -1,0 +1,16 @@
+program 1:
+#include<stdio.h>
+int main()
+{
+   int no1,no2;
+   int division;
+   int multi;
+   printf("Enter any two numbers:");
+   scanf("%d%d",&no1,&no2);
+   
+   division=no1/no2;
+   multi=no1*no2;
+   
+   printf("(%d*%d=%d %d/%d=%d)",no1,no2,multi,no1,no2,division);
+   return 0;
+}
