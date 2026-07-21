@@ -103,3 +103,21 @@ int main() {
 }
     return 0;
 }
+
+5.to find odd or even
+
+#include<stdio.h>
+int main() {
+   int num;
+   printf("Enter your any number:");
+   scanf("%d",&num);
+   if(num%2==0){
+      printf("The given number is even");
+   }
+   else{
+       printf("The given number is odd");
+   }
+
+}
+
+.
