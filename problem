@@ -14,3 +14,82 @@ int main()
    printf("(%d*%d=%d %d/%d=%d)",no1,no2,multi,no1,no2,division);
    return 0;
 }
+
+//Without arg functions Without return type
+
+
+#include<stdio.h>
+void greet(){
+   printf("welcome");
+}
+void main(){
+   greet();
+}
+
+pr2:
+
+#include<stdio.h>
+void greet();
+void main(){
+   greet();
+}
+void greet(){
+   printf("welcome");
+}
+
+//With arg Without return type
+
+#include<stdio.h>
+void greet();
+void main(){
+   int a,b;
+   printf("Enter any two numbers:");
+   scanf("%d%d",&a,&b);
+  
+   
+}
+void greet(int a,int b){
+   int c=a+b;
+   printf("sum of two numbers is %d",c);;
+}
+
+
+//With arg functions and return type
+
+#include<stdio.h>
+int greet();
+void main(){
+   int a,b;
+   printf("Enter any two numbers:");
+   scanf("%d%d",&a,&b);
+   printf("sum of two numbers is %d", greet(a,b));
+   
+}
+int greet(int a,int b){
+   return a+b;
+}
+
+// fun with four operation
+
+#include<stdio.h>
+int sum(int a,int b){
+   return a+b;
+}
+int sub(int a,int b){
+   return a-b;
+}
+int mul(int a,int b){
+   return a*b;
+}
+int mod(int a,int b){
+   return a%b;
+}
+void main(){
+   int a,b;
+   printf("Enter any two numbers:");
+   scanf("%d%d",&a,&b);
+   printf("sum of two numbers is :%d\n", sum(a,b));
+   printf("difference of two numbers is :%d\n", sub(a,b));
+    printf("multiplication of two numbers is :%d\n", mul(a,b));
+    printf("modulas of two numbers is :%d", mod(a,b));
+}
